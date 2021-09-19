@@ -13,8 +13,18 @@ module.exports = {
         info: '#fccf0c',
         success: '#02ef63',
         danger: '#fe6ea8',
-        normal: '#07bcfc'
+        normal: '#07bcfc',
+        frosted: '#1d2f41'
       },
+      height: {
+        100: '40rem'
+      },
+      width: {
+        100: '35rem'
+      },
+      borderWidth: {
+        1: '.5px'
+      }
     },
   },
   variants: {
