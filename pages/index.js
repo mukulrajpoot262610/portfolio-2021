@@ -1,7 +1,13 @@
 import Head from 'next/head'
 import Link from 'next/link';
+import { useState } from 'react';
+import Cover from '../components/Cover';
+import PROJECTS_DATA from '../components/projects.data';
 
 export default function Home() {
+
+  const [showMore, setShowMore] = useState()
+
   return (
     <div className="min-h-screen px-3">
 
@@ -20,7 +26,7 @@ export default function Home() {
         </main>
       </div>
 
-      <div className="h-screen flex flex-col items-center justify-center">
+      <div className="min-h-screen flex flex-col items-center justify-center">
         <div className="hidden h-1/4 container relative w-full md:flex justify-center items-center">
           <h1 className="absolute bottom-0 text-transparent" style={{ WebkitTextStrokeWidth: '.5px', WebkitTextStrokeColor: 'var(--main-yellow)', fontSize: '15rem', zIndex: '-1' }}>&lt;About /&gt; </h1>
           <h1 className="text-secondary-100 font-extrabold" style={{ fontSize: '10rem' }} >Mukul Rajpoot</h1>
@@ -36,18 +42,19 @@ export default function Home() {
         </main>
       </div>
 
-      <div className="h-screen flex flex-col items-center justify-center">
+      <div className="min-h-screen flex flex-col items-center justify-center">
         <div className="hidden h-1/4 container relative w-full md:flex justify-center items-center">
           <h1 className="absolute bottom-0 text-transparent" style={{ WebkitTextStrokeWidth: '.5px', WebkitTextStrokeColor: 'var(--main-yellow)', fontSize: '15rem', zIndex: '-1' }}>&lt;Work /&gt; </h1>
           <h1 className="text-secondary-100 font-extrabold" style={{ fontSize: '10rem' }} >Featured Projects</h1>
         </div>
-        <main className="container px-20 lg:px-56">
-          <h3 className="text-success md:text-4xl">Work</h3>
-          <h3 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8">I am a full-stack creative developer based in Barielly, India. I am a <span>Computer Science</span> undergraduate from Chandigarh University and also did some coursework in Designing and Visual Arts.</h3>
-          <h4 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8"> I enjoy using my skill-set to empower people to accomplish their goals.
-            My development stack is focused on building incredible fast websites and WebApps with delightful interactions.
-          </h4>
-          <button className="rounded-lg border-2 px-8 py-4 my-4 border-success text-success">Learn More</button>
+        <main className="container px-20 lg:px-56 flex flex-col items-start justify-center">
+          <h3 className="text-success md:text-4xl">Some Selected Projects</h3>
+          <div className="flex flex-wrap items-center justify-center">
+            {
+              PROJECTS_DATA.filter((e) => e.id < 6).map((e) => <Cover data={e} key={e.id} />)
+            }
+          </div>
+          <button className="rounded-lg border-2 px-8 py-4 my-4 border-success text-success self-center">View More</button>
         </main>
       </div>
 
