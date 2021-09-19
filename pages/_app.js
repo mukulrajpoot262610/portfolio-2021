@@ -1,3 +1,4 @@
+import Footer from '../components/Footer'
 import 'tailwindcss/tailwind.css'
 import LeftSidebar from '../components/LeftSidebar'
 import Navbar from '../components/Navbar/Navbar'
@@ -9,6 +10,7 @@ function MyApp({ Component, pageProps }) {
       <Navbar />
       <LeftSidebar />
       <Component {...pageProps} />
+      <Footer />
     </>
   )
 }
