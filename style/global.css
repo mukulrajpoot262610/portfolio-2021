@@ -16,6 +16,14 @@
   --main-red: #fe6ea8;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-primary);
+}
+
 html {
   font-size: 62.5%;
 }
