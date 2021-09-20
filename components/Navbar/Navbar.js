@@ -53,16 +53,12 @@ const Navbar = () => {
     return (
         <>
             <nav className="fixed z-50 h-32 w-full flex items-center justify-around transition ease-in-out backdrop-blur-md">
-                <div>
-                    <Link href="/">
-                        <h1 className="text-secondary-100 text-5xl">MR</h1>
-                    </Link>
-                </div>
-                <div>
-                    <button disabled={disabled} onClick={handleMenu} className="text-secondary-100 text-3xl rounded-lg border-2 px-8 py-2 my-4 border-secondary hover:border-info hover:text-info" >
-                        {state.menuName}
-                    </button>
-                </div>
+                <Link href="/">
+                    <h1 className="text-secondary-100 font-extrabold text-6xl cursor-pointer">🏡</h1>
+                </Link>
+                <button disabled={disabled} onClick={handleMenu} className="text-secondary-100 text-3xl rounded-lg border-2 px-8 py-2 my-4 border-secondary hover:border-info hover:text-info" >
+                    {state.menuName}
+                </button>
             </nav>
             <Humburger state={state} setState={setState} />
         </>

@@ -1,10 +1,27 @@
-import Footer from '../components/Footer'
+import AOS from "aos";
+import { useEffect } from "react";
+
 import 'tailwindcss/tailwind.css'
+import '../style/global.css'
+import "aos/dist/aos.css";
+
+import Footer from '../components/Footer'
 import LeftSidebar from '../components/LeftSidebar'
 import Navbar from '../components/Navbar/Navbar'
-import '../style/global.css'
+
+
 
 function MyApp({ Component, pageProps }) {
+
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <>
       <Navbar />
