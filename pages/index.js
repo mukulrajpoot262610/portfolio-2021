@@ -7,6 +7,13 @@ import { GithubOutlined, TwitterOutlined, LinkedinOutlined, MailOutlined } from 
 
 export default function Home() {
 
+  const [data, setData] = useState(PROJECTS_DATA)
+
+  const handleClose = (id) => {
+    const newData = data.filter((e) => e.id !== id)
+    setData(newData)
+  }
+
   return (
     <div className="min-h-screen px-3 overflow-hidden">
 
@@ -59,12 +66,22 @@ export default function Home() {
         </div>
         <main className="container px-20 lg:px-56 flex flex-col items-center justify-center">
           <h3 className="text-success md:text-4xl self-start">Some Selected Projects</h3>
-          <div className="flex flex-wrap items-center justify-center my-12">
+          <div className="flex flex-wrap items-center justify-center my-12 transition ease-in-out">
             {
-              PROJECTS_DATA.filter((e) => e.id < 6).map((e) => <Cover data={e} key={e.id} />)
+              data.length === 0 ? (
+                <div className="flex flex-col justify-center items-center">
+                  <img src="/noData.svg" alt="" className="w-1/2 h-auto my-12" />
+                  <h3 className="text-success md:text-4xl" data-aos="fade-in">No Projects Opened</h3>
+                </div>
+              ) : data.map((e) => <Cover data={e} key={e.id} handleClose={handleClose} />)
             }
           </div>
-          <button className="rounded-lg border-2 px-8 py-4 my-4 border-success text-success self-center">View More</button>
+          {
+            data.length === 0 && <button className="rounded-lg border-2 px-8 py-4 my-4 border-info text-info self-center" onClick={() => setData(PROJECTS_DATA)}>Load All Again</button>
+          }
+          {
+            data.length !== 0 && <button className="rounded-lg border-2 px-8 py-4 my-4 border-success text-success self-center">View More</button>
+          }
         </main>
       </div>
 
