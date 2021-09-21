@@ -1,11 +1,16 @@
 import Head from 'next/head'
 import Link from 'next/link';
 import { useState } from 'react';
+import { Steps } from 'antd';
 import Cover from '../components/Cover';
 import PROJECTS_DATA from '../components/projects.data';
 import { GithubOutlined, TwitterOutlined, LinkedinOutlined, MailOutlined } from '@ant-design/icons'
+import ExCover from '../components/ExCover';
+import EXP_DATA from '../components/experience.data';
 
 export default function Home() {
+
+  const { Step } = Steps;
 
   const [data, setData] = useState(PROJECTS_DATA)
 
@@ -13,6 +18,12 @@ export default function Home() {
     const newData = data.filter((e) => e.id !== id)
     setData(newData)
   }
+
+  const text = `
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+`;
 
   return (
     <div className="min-h-screen px-3 overflow-hidden">
@@ -62,6 +73,21 @@ export default function Home() {
       <div className="min-h-screen flex flex-col items-center justify-center">
         <div className="hidden h-1/4 container relative w-full md:flex justify-center items-center">
           <h1 data-aos="fade-right" className="absolute bottom-0 text-transparent" style={{ WebkitTextStrokeWidth: '.5px', WebkitTextStrokeColor: 'var(--main-yellow)', fontSize: '15rem', zIndex: '-1' }}>&lt;Work /&gt; </h1>
+          <h1 data-aos="fade-left" className="text-secondary-100 font-extrabold" style={{ fontSize: '10rem' }} >Experience</h1>
+        </div>
+        <main className="container px-10 lg:px-56">
+          <h3 className="text-success md:text-4xl" data-aos="fade-in">Where I've Worked <span className="text-xl text-secondary-900">( Selected )</span></h3>
+          <div className="flex flex-wrap items-center justify-center my-12 transition ease-in-out">
+            {
+              EXP_DATA.map((e) => <ExCover data={e} key={e.id} />)
+            }
+          </div>
+        </main>
+      </div>
+
+      <div className="min-h-screen flex flex-col items-center justify-center my-64">
+        <div className="hidden h-1/4 container relative w-full md:flex justify-center items-center">
+          <h1 data-aos="fade-right" className="absolute bottom-0 text-transparent" style={{ WebkitTextStrokeWidth: '.5px', WebkitTextStrokeColor: 'var(--main-yellow)', fontSize: '15rem', zIndex: '-1' }}>&lt;Work /&gt; </h1>
           <h1 data-aos="fade-left" className="text-secondary-100 font-extrabold" style={{ fontSize: '10rem' }} >Featured Projects</h1>
         </div>
         <main className="container px-20 lg:px-56 flex flex-col items-center justify-center">
@@ -82,6 +108,23 @@ export default function Home() {
           {
             data.length !== 0 && <button className="rounded-lg border-2 px-8 py-4 my-4 border-success text-success self-center">View More</button>
           }
+        </main>
+      </div>
+
+      <div className="h-screen flex flex-col items-center justify-center">
+        <div className="hidden h-1/4 container relative w-full md:flex justify-center items-center">
+          <h1 data-aos="fade-right" className="absolute bottom-0 text-transparent" style={{ WebkitTextStrokeWidth: '.5px', WebkitTextStrokeColor: 'var(--main-yellow)', fontSize: '15rem', zIndex: '-1' }}>&lt;About /&gt; </h1>
+          <h1 data-aos="fade-left" className="text-secondary-100 font-extrabold" style={{ fontSize: '10rem' }} >Why Me? </h1>
+        </div>
+        <main className="container px-20 lg:px-56">
+          <h3 className="text-success md:text-4xl">Why Me?</h3>
+          <h3 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8">There’s nothing I enjoy more than developing good websites and webApps for Cool people. I believe that people should do things they are good at or in which their <span className="text-success">Hearts ❤</span> lie. That's why I choose freelance web development as my career.</h3>
+          <h3 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8">I’ve spent many years trying to perfect what I do and while I’ll never be perfect, I do my best to come close.</h3>
+          <h4 className="text-secondary-100 font-light text-4xl md:text-5xl max-w-6xl my-8"> If you’ve got a project you’d like to work on with me just get in touch and we can get to work!
+          </h4>
+          <Link href="/contact">
+            <button className="rounded-lg border-2 px-8 py-4 my-4 border-success text-success">Contact Now</button>
+          </Link>
         </main>
       </div>
 

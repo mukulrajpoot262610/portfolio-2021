@@ -43,7 +43,7 @@ const Cover = ({ data, handleClose }) => {
             <img src={image} alt="" className="h-auto w-full rounded-2xl my-6" />
             <div className="flex flex-wrap justify-start items-center my-6">
                 {
-                    tech.map((e, i) => <img src={e.class} key={i} alt="" className="w-8 mx-2" />)
+                    tech.map((e, i) => <h1 className="text-secondary-900 mx-2">{e.name}</h1>)
                 }
             </div>
         </div>
