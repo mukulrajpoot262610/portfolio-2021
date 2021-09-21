@@ -8,6 +8,7 @@
   "dependencies": {
     "antd": "^4.16.13",
     "aos": "^2.3.4",
+    "craco-less": "^1.20.0",
     "gsap": "^3.7.1",
     "next": "latest",
     "react": "^17.0.2",

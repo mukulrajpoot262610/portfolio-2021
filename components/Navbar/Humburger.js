@@ -50,19 +50,19 @@ const Humburger = ({ state, setState }) => {
                     <ul className="w-full h-1/2 flex flex-col justify-center items-center">
                         <li>
                             <Link href='/work'>
-                                <h1 className="text-secondary-100 text-7xl lg:text-9xl font-bold hover:text-success">
+                                <h1 className="text-secondary-100 text-7xl lg:text-9xl font-bold hover:text-success cursor-pointer">
                                     Work
                                 </h1>
                             </Link>
                         </li>
                         <li>
                             <Link href='/about'>
-                                <h1 className="text-secondary-100 text-7xl lg:text-9xl hover:text-success font-bold">About</h1>
+                                <h1 className="text-secondary-100 text-7xl lg:text-9xl hover:text-success font-bold cursor-pointer">About</h1>
                             </Link>
                         </li>
                         <li>
                             <Link href='/contact'>
-                                <h1 className="text-secondary-100 text-7xl lg:text-9xl hover:text-success font-bold">Contact</h1>
+                                <h1 className="text-secondary-100 text-7xl lg:text-9xl hover:text-success font-bold cursor-pointer">Contact</h1>
                             </Link>
                         </li>
                     </ul>
