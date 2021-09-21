@@ -75,7 +75,7 @@ export default function Home() {
           <h1 data-aos="fade-right" className="absolute bottom-0 text-transparent" style={{ WebkitTextStrokeWidth: '.5px', WebkitTextStrokeColor: 'var(--main-yellow)', fontSize: '15rem', zIndex: '-1' }}>&lt;Work /&gt; </h1>
           <h1 data-aos="fade-left" className="text-secondary-100 font-extrabold" style={{ fontSize: '10rem' }} >Experience</h1>
         </div>
-        <main className="container px-20 lg:px-56">
+        <main className="container px-10 lg:px-56">
           <h3 className="text-success md:text-4xl" data-aos="fade-in">Where I've Worked <span className="text-xl text-secondary-900">( Selected )</span></h3>
           <div className="flex flex-wrap items-center justify-center my-12 transition ease-in-out">
             {

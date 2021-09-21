@@ -20,7 +20,7 @@ const ExCover = ({ data }) => {
             <hr />
             <h1 className="text-secondary-100 text-4xl mx-4 my-6">{name}</h1>
             <h2 className="text-secondary-900 text-xl mx-4 flex items-center"><EnvironmentOutlined />&nbsp;{location}</h2>
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col md:flex">
                 <p className="text-secondary-900 mx-4">{post}</p>
                 <p className="text-secondary-900 text-3xl mx-4 cursor-pointer">
                     {desc}
