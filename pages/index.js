@@ -106,7 +106,7 @@ export default function Home() {
             data.length === 0 && <button className="rounded-lg border-2 px-8 py-4 my-4 border-info text-info self-center" onClick={() => setData(PROJECTS_DATA)}>Load All Again</button>
           }
           {
-            data.length !== 0 && <button className="rounded-lg border-2 px-8 py-4 my-4 border-success text-success self-center">View More</button>
+            data.length !== 0 && <Link href="/work"><button className="rounded-lg border-2 px-8 py-4 my-4 border-success text-success self-center">View More</button></Link>
           }
         </main>
       </div>
