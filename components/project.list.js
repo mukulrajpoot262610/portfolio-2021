@@ -1,12 +1,5 @@
 const LIST_DATA = [
     {
-        id: 1,
-        name: 'devFriend.io',
-        link: '',
-        github: '',
-        tech: ['nextjs', 'reactjs', 'tailwind', 'firebase', 'express', 'nodejs', 'mongodb'],
-    },
-    {
         id: 2,
         name: 'Dev.to Community Clone',
         link: 'http://blog-website-mr.herokuapp.com/',
@@ -30,21 +23,14 @@ const LIST_DATA = [
     {
         id: 4,
         name: 'Trackit',
-        link: 'https://mukulrajpoot.vercel.app/',
+        link: 'https://trackit-mr.netlify.app/',
         github: 'https://github.com/mukulrajpoot262610/portfolio-2021',
         tech: ['html', 'css', 'js', 'netlify'],
     },
     {
         id: 5,
         name: 'TrackerX',
-        link: 'https://mukulrajpoot.vercel.app/',
-        github: 'https://github.com/mukulrajpoot262610/portfolio-2021',
-        tech: ['reactjs', 'bootstrap', 'nodejs', 'mongodb', 'express'],
-    },
-    {
-        id: 6,
-        name: 'TrackerX',
-        link: 'https://mukulrajpoot.vercel.app/',
+        link: 'https://trackit-mr.netlify.app/',
         github: 'https://github.com/mukulrajpoot262610/portfolio-2021',
         tech: ['reactjs', 'bootstrap', 'nodejs', 'mongodb', 'express'],
     },
