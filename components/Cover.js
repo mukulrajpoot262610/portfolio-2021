@@ -1,10 +1,9 @@
 import React from 'react'
-import Link from 'next/link'
 import { GithubOutlined, LinkOutlined } from '@ant-design/icons'
 
 const Cover = ({ data, handleClose }) => {
 
-    const { id, name, desc, github, tech, date, link, type, image } = data;
+    const { id, name, github, tech, date, link, type, image } = data;
 
     return (
         <div className="w-100 h-100 border-1 mx-4 my-4 border-secondary-900 bg-frosted rounded-xl px-4">
@@ -18,7 +17,16 @@ const Cover = ({ data, handleClose }) => {
                 <h1 className="text-secondary-900 my-6">{type}</h1>
             </div>
             <hr />
-            <h1 className="text-secondary-100 text-4xl mx-4 my-6">{name}</h1>
+            {
+                link ? (
+                    <a href={link} target="_blank">
+                        <h1 className="text-secondary-100 text-4xl mx-4 my-4">{name}</h1>
+                    </a>
+                ) : (
+                    <h1 className="text-secondary-100 text-4xl mx-4 my-4">{name}</h1>
+                )
+            }
+            <h1 className="text-secondary-900 text-xl mx-4 my-2">{link ? "" : "Currently Working on"}</h1>
             <div className="flex items-center justify-between">
                 <p className="text-secondary-900 mx-4">{date}</p>
                 <div className="flex">
@@ -28,7 +36,6 @@ const Cover = ({ data, handleClose }) => {
                                 <LinkOutlined />
                             </a>
                         }
-
                     </p>
                     <p className="text-secondary-900 text-3xl mx-4 cursor-pointer">
                         {
@@ -40,7 +47,7 @@ const Cover = ({ data, handleClose }) => {
                     </p>
                 </div>
             </div>
-            <img src={image} alt="" height={100} width={100} className="h-auto w-full rounded-2xl my-6" />
+            <img src={image} alt="" height={100} width={100} className="h-auto w-full rounded-2xl" />
             <div className="flex flex-wrap justify-start items-center my-6">
                 {
                     tech.map((e, i) => <h1 key={i} className="text-secondary-900 mx-2">{e.name}</h1>)

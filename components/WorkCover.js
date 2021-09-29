@@ -34,8 +34,10 @@ const WorkCover = ({ data }) => {
                 </div>
             </div>
             <hr />
-            <h1 className="text-secondary-100 text-4xl mx-4 my-6">{name}</h1>
-            <div className="flex md:flex my-6">
+            <a href={link} target="_blank">
+                <h1 className="text-secondary-100 text-4xl mx-4 my-6">{name}</h1>
+            </a>
+            <div className="flex flex-wrap md:flex my-6">
                 {
                     tech.map((e) => <h1 className="text-secondary-900 mx-4">{e}</h1>)
                 }
