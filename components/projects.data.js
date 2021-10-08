@@ -28,7 +28,7 @@ const PROJECTS_DATA = [
         image: 'https://res.cloudinary.com/mukulrajpoot/image/upload/c_thumb,w_200,g_face/v1632318802/3_becmce.png',
         tech: [{ class: '/icons/react.svg', name: 'React' }, { class: '/icons/expressjs.svg', name: 'Express' }, { class: '/icons/mongodb.svg', name: 'MongoDB' }, { class: '/icons/firebase.svg', name: 'Firebase' }],
         date: 'Aug 2021',
-        link: '',
+        link: 'https://devfriend-socila.vercel.app/',
         github: '',
         type: 'WebApp & Website',
     },
