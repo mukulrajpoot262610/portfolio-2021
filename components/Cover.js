@@ -26,7 +26,7 @@ const Cover = ({ data, handleClose }) => {
                     <h1 className="text-secondary-100 text-4xl mx-4 my-4">{name}</h1>
                 )
             }
-            <h1 className="text-secondary-900 text-xl mx-4 my-2">{link ? "" : "Currently Working on"}</h1>
+            <h1 className="text-secondary-900 text-xl mx-4 my-2">{link ? "Completed" : "Currently Working on"}</h1>
             <div className="flex items-center justify-between">
                 <p className="text-secondary-900 mx-4">{date}</p>
                 <div className="flex">
@@ -48,10 +48,9 @@ const Cover = ({ data, handleClose }) => {
                 </div>
             </div>
             <img src={image} alt="" height={100} width={100} className="h-auto w-full rounded-2xl" />
-            <div className="flex flex-wrap justify-start items-center my-6">
-                {
-                    tech.map((e, i) => <h1 key={i} className="text-secondary-900 mx-2">{e.name}</h1>)
-                }
+            <div className="flex flex-wrap justify-between items-center my-6 mx-4">
+                <a href={github} target='_blank' className="font-semibold text-2xl">GitHub 🤜</a>
+                <a href={link} target="_blank" className="font-semibold text-2xl">Visit 🤜</a>
             </div>
         </div>
     )
