@@ -36,7 +36,7 @@ html {
 
 body {
   color: var(--main-primary);
-  background-color: var(--bg-primary);
+  background-color: #05182c !important;
   font-family: 'Poppins', sans-serif;
 }
 
