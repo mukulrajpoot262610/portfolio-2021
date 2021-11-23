@@ -18,7 +18,7 @@ const Contact = () => {
                 </div>
                 <main className="container px-20 lg:px-56">
                     <h3 className="text-success md:text-4xl">Get in Touch</h3>
-                    <h2 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8">I’m available from October for freelance projects. Let’s work together to create something worth sharing.</h2>
+                    <h2 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8">I’m available for freelance projects. Let’s work together to create something worth sharing.</h2>
                     <div className="flex">
                         <a href="mailto: mukulrajpoot262610@gmail.com" target="_blank">
                             <button className="rounded-lg border-2 px-8 py-4 my-4 mx-4 flex items-center justify-between border-success text-success">
