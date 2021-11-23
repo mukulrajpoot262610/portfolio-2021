@@ -20,7 +20,7 @@ const About = () => {
                 </div>
                 <main className="container px-20 lg:px-56">
                     <h3 className="text-success md:text-4xl" data-aos="fade-in">About Me</h3>
-                    <h3 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8">I am a full-stack creative developer based in Barielly, India. I am a <span>Computer Science</span> undergraduate from Chandigarh University and also did some coursework in Designing and Visual Arts.</h3>
+                    <h3 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8">I am a front-end creative developer based in Barielly, India. I am a <span>Computer Science</span> undergraduate from Chandigarh University and also did some coursework in Designing and Visual Arts.</h3>
                     <h4 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8"> I enjoy using my skill-set to empower people to accomplish their goals. My development stack is focused on performance & accessibility with delightful interactions. I create lighting fast WebApps and Websites using <span className="font-bold text-success">MERN</span> Stack with the help of NextJS.
                     </h4>
                 </main>
