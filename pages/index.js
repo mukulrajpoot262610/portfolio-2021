@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link';
 import { useState } from 'react';
-import { Steps } from 'antd';
 import Cover from '../components/Cover';
 import PROJECTS_DATA from '../components/projects.data';
 import { GithubOutlined, TwitterOutlined, LinkedinOutlined, MailOutlined } from '@ant-design/icons'
@@ -9,9 +8,6 @@ import ExCover from '../components/ExCover';
 import EXP_DATA from '../components/experience.data';
 
 export default function Home() {
-
-  const { Step } = Steps;
-
   const [data, setData] = useState(PROJECTS_DATA)
 
   const handleClose = (id) => {
