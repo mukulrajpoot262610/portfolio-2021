@@ -22,6 +22,9 @@ module.exports = {
       width: {
         100: '35rem'
       },
+      fontSize: {
+        'xxl': '20rem'
+      },
       borderWidth: {
         1: '.5px'
       }
