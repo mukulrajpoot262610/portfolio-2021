@@ -18,22 +18,22 @@ const Contact = () => {
                 </div>
                 <main className="container px-20 lg:px-56">
                     <h3 className="text-success md:text-4xl">Get in Touch</h3>
-                    <h2 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8">I’m available from October for freelance projects. Let’s work together to create something worth sharing.</h2>
+                    <h2 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8">I'm available for freelance projects. Let's work together to create something worth sharing.</h2>
                     <div className="flex">
                         <a href="mailto: mukulrajpoot262610@gmail.com" target="_blank">
-                            <button className="rounded-lg border-2 px-8 py-4 my-4 mx-4 flex items-center justify-between border-success text-success">
+                            <button data-aos="fade-in" className="rounded-lg border-2 px-8 py-4 my-4 mr-4 flex items-center justify-between font-semibold hover:bg-success hover:text-white border-success text-success">
                                 <MailOutlined />
                                 <span className="mx-2">Mail</span>
                             </button>
                         </a>
                         <a href="https://www.linkedin.com/in/mukul-rajpoot-262610/" target="_blank">
-                            <button className="rounded-lg border-2 px-8 py-4 my-4 mx-4 flex items-center justify-between border-info text-info">
+                            <button data-aos="fade-in" className="rounded-lg border-2 px-8 py-4 my-4 mx-4 flex items-center justify-between font-semibold hover:bg-info hover:text-white border-info text-info">
                                 <LinkedinOutlined />
                                 <span className="mx-2">LinkedIn</span>
                             </button>
                         </a>
                         <a href="https://github.com/mukulrajpoot262610" target="_blank">
-                            <button className="rounded-lg border-2 px-8 py-4 my-4 mx-4 flex items-center justify-between border-normal text-normal">
+                            <button data-aos="fade-in" className="rounded-lg font-semibold border-2 px-8 py-4 my-4 mx-4 flex items-center justify-between border-normal hover:text-white text-normal hover:bg-normal">
                                 <GithubOutlined />
                                 <span className="mx-2">GitHub</span>
                             </button>

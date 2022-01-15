@@ -1,5 +1,41 @@
 const PROJECTS_DATA = [
     {
+        id: 6,
+        name: 'Ethereum Transfer Dapp',
+        desc: 'Ethereum Transfer is a decentralised application built on ethereum blockchain',
+        image: 'https://res.cloudinary.com/mukulrajpoot/image/upload/c_thumb,w_200,g_face/v1632318800/5_ocb8zg.jpg',
+        tech: [{ class: '/icons/nextjs.svg', name: 'HTML' }, { class: '/icons/css.svg', name: 'CSS' }, { class: '/icons/javascript.svg', name: 'JS' }, { class: '/icons/netlify.svg', name: 'Netlify' }],
+        date: '--',
+        link: 'https://eth-transfer-dapp.vercel.app/',
+        github: 'https://github.com/mukulrajpoot262610/eth-transfer-dapp',
+        type: 'WebApp',
+        category: 'Personal'
+    },
+    {
+        id: 8,
+        name: 'Ethereum Transfer Dapp',
+        desc: 'Ethereum Transfer is a decentralised application built on ethereum blockchain',
+        image: 'https://res.cloudinary.com/mukulrajpoot/image/upload/c_thumb,w_200,g_face/v1632318800/5_ocb8zg.jpg',
+        tech: [{ class: '/icons/nextjs.svg', name: 'HTML' }, { class: '/icons/css.svg', name: 'CSS' }, { class: '/icons/javascript.svg', name: 'JS' }, { class: '/icons/netlify.svg', name: 'Netlify' }],
+        date: '--',
+        link: 'https://eth-transfer-dapp.vercel.app/',
+        github: 'https://github.com/mukulrajpoot262610/eth-transfer-dapp',
+        type: 'WebApp',
+        category: 'Personal'
+    },
+    {
+        id: 7,
+        name: 'Worthpad NFT Place',
+        desc: 'Worthpad is an innovative, decentralized, multi-chain DeFi platform that makes investing in DeFi and crypto projects easy and accessible for the masses. Worthpad empowers high growth potential crypto projects with the ability to raise liquidity in a fair manner while also developing dedicated communities behind them.',
+        image: 'https://res.cloudinary.com/mukulrajpoot/image/upload/c_thumb,w_200,g_face/v1632318800/5_ocb8zg.jpg',
+        tech: [{ class: '/icons/nextjs.svg', name: 'HTML' }, { class: '/icons/css.svg', name: 'CSS' }, { class: '/icons/javascript.svg', name: 'JS' }, { class: '/icons/netlify.svg', name: 'Netlify' }],
+        date: '--',
+        link: 'https://www.worthpad.org/',
+        github: 'https://github.com/mukulrajpoot262610',
+        type: 'WebApp',
+        category: 'Freelance'
+    },
+    {
         id: 1,
         name: 'Dev Community Clone',
         desc: 'Dev Community is Full-stack Blogging Application build with MERN. This project is inspired from dev.to website, I enjoyed and learned a lot while building this. I used React for Front-end User interface, Redux for State Management, Redux thunk for Asynchronous tasks, Express for Backend server, MongoDB Atlas for Database, JSON Web Tokens for Authentications, SHA256 Hashing Algo to hash password and Firbase for storage.',
