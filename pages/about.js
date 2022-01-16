@@ -35,7 +35,7 @@ const About = () => {
                     <h3 className="text-success md:text-4xl">Technologies that I use</h3>
                     <div className="flex flex-wrap justify-center items-center">
                         {
-                            SKILL_DATA.map((e) => <Circle data={e} key={e.id} />)
+                            SKILL_DATA.map((e) => <Circle text={e.name} image={e.image} key={e.id} />)
                         }
                     </div>
                 </main>
