@@ -72,7 +72,7 @@ export default function Home({ projects }) {
           <h3 className="text-success md:text-3xl mt-6" data-aos="fade-in">Want to know more?</h3>
           <div className='flex'>
             <Link href="/about">
-              <GreenButton text="Know More" />
+              <button className="rounded-lg border-2 px-8 py-4 font-semibold hover:bg-success hover:text-white border-success text-success">Know More</button>
             </Link>
             <a href="/assets/resume.pdf" target="_blank">
               <button data-aos="fade-in" className="rounded-lg border-2 px-8 py-4 mx-4 flex items-center justify-between font-semibold hover:bg-info hover:text-white border-info text-info">
@@ -101,11 +101,8 @@ export default function Home({ projects }) {
             }
           </div>
           {
-            data.length === 0 && <button className="rounded-lg border-2 px-8 py-4 my-4 border-info text-info self-center" onClick={() => setData(PROJECTS_DATA)}>Load All Again</button>
-          }
-          {
-            data.length !== 0 && <Link href="/work">
-              <GreenButton text="View More" />
+            <Link href="/work" passHref>
+              <button className="rounded-lg border-2 px-8 py-4 font-semibold hover:bg-success hover:text-white border-success text-success">View More</button>
             </Link>
           }
         </main>
@@ -123,7 +120,7 @@ export default function Home({ projects }) {
           <h4 className="text-secondary-100 font-light text-4xl md:text-5xl max-w-6xl my-8"> If you've got a project you'd like to work on with me just get in touch and we can get to work!
           </h4>
           <Link href="/contact">
-            <GreenButton text="Contact Now" />
+            <button className="rounded-lg border-2 px-8 py-4 font-semibold hover:bg-success hover:text-white border-success text-success">Contact Now</button>
           </Link>
         </main>
       </div>

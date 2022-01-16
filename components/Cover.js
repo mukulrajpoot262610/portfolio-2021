@@ -9,7 +9,7 @@ const Cover = ({ data, handleClose }) => {
 
     return (
         <Link href={`/projects/${id}`}>
-            <div className="w-100 border-1 mx-4 my-4 cursor-pointer border-secondary-900 bg-frosted rounded-xl px-4 hover:border-success">
+            <div className="w-100 border-1 mx-4 my-4 cursor-pointer border-secondary-900 bg-frosted rounded-xl px-4 hover:border-success hover:animate-pulse">
                 <div className="justify-between items-center mx-2 flex">
                     <div className="flex my-6">
                         <span className="w-6 h-6 bg-red-500 rounded-full cursor-pointer" onClick={() => handleClose(id)} ></span>

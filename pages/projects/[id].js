@@ -4,12 +4,14 @@ import PROJECTS_DATA from '../../public/assets/projects'
 import { Spin } from 'antd';
 import Circle from '../../components/Circle';
 import Feedback from '../../components/card/Feedback';
+import Cover from '../../components/Cover';
 
 export const getStaticProps = async ({ params }) => {
   const project = PROJECTS_DATA.find(p => p.id.toString() === params.id)
 
   return {
     props: {
+      projects: PROJECTS_DATA,
       project: project
     }
   }
@@ -26,7 +28,7 @@ export const getStaticPaths = async () => {
   }
 }
 
-const ProjectDetail = ({ project }) => {
+const ProjectDetail = ({ project, projects }) => {
   const [data] = useState(project)
 
   return (
