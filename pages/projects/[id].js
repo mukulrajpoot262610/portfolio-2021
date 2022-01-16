@@ -3,6 +3,7 @@ import Head from 'next/head'
 import PROJECTS_DATA from '../../public/assets/projects'
 import { Spin } from 'antd';
 import Circle from '../../components/Circle';
+import Feedback from '../../components/card/Feedback';
 
 export const getStaticProps = async ({ params }) => {
   const project = PROJECTS_DATA.find(p => p.id.toString() === params.id)
@@ -55,15 +56,17 @@ const ProjectDetail = ({ project }) => {
               </div>
               <h1 className='uppercase text-3xl text-success font-bold mt-28'>Project Url<span className='text-lg'>(s)</span></h1>
               <div className='flex flex-wrap'>
-                <Circle image={'/icons/github.svg'} text="Github" />
-                <Circle image={'/icons/chrome.svg'} text="Live" />
+                {
+                  data.github === 'NA' ? "" : <Circle image={'/icons/github.svg'} text="Github" link={data.github} />
+                }
+                <Circle image={'/icons/chrome.svg'} text="Live" link={data.link} />
               </div>
 
               {
                 data.category === 'Freelance' ? (
                   <div className=''>
                     <h1 className='uppercase text-3xl text-success font-bold mt-28 mb-10'>Testimonial</h1>
-                    <img src='/worthpad.png' alt="" className='rounded-lg my-4' />
+                    <Feedback text={data.feedback} user={data.client} />
                   </div>
                 ) : ""
               }

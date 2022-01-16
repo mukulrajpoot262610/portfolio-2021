@@ -1,6 +1,7 @@
 import React from 'react'
 import { GithubOutlined, LinkOutlined } from '@ant-design/icons'
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Cover = ({ data, handleClose }) => {
 
@@ -49,7 +50,7 @@ const Cover = ({ data, handleClose }) => {
                         </p>
                     </div>
                 </div>
-                <img src={image} alt="" height={100} width={100} className="h-auto w-full rounded-2xl" />
+                <Image src={image} alt="" height={200} width={330} className="h-auto object-cover w-full rounded-2xl" alt={name} />
                 <div className="flex justify-between items-center my-6 mx-4">
                     <a href={github} target='_blank' className="font-semibold text-2xl">GitHub 🤜</a>
                     <a href={link} target="_blank" className="font-semibold text-2xl">Visit 🤜</a>
