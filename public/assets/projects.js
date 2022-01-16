@@ -1,8 +1,8 @@
 const PROJECTS_DATA = [
     {
-        id: 6,
+        id: 1,
         name: 'Ethereum Transfer Dapp',
-        desc: 'Ethereum Transfer is a decentralised application built on ethereum blockchain',
+        desc: 'Ethereum Transfer is a decentralised application built on ethereum blockchain.It let people to transfer etheruem peer to peer without need of any middle man like Banks. This is my first project in the WEB 3.0 space, I\'m still learning all the exciting WEB 3.0 Technologies.',
         image: 'https://res.cloudinary.com/mukulrajpoot/image/upload/c_thumb,w_200,g_face/v1632318800/5_ocb8zg.jpg',
         tech: [{ image: '/icons/nextjs.svg', name: 'HTML' }, { image: '/icons/css.svg', name: 'CSS' }, { image: '/icons/javascript.svg', name: 'JS' }, { image: '/icons/netlify.svg', name: 'Netlify' }],
         date: '--',
@@ -36,7 +36,7 @@ const PROJECTS_DATA = [
         category: 'Freelance'
     },
     {
-        id: 1,
+        id: 10,
         name: 'Dev Community Clone',
         desc: 'Dev Community is Full-stack Blogging Application build with MERN. This project is inspired from dev.to website, I enjoyed and learned a lot while building this. I used React for Front-end User interface, Redux for State Management, Redux thunk for Asynchronous tasks, Express for Backend server, MongoDB Atlas for Database, JSON Web Tokens for Authentications, SHA256 Hashing Algo to hash password and Firbase for storage.',
         image: 'https://res.cloudinary.com/mukulrajpoot/image/upload/c_thumb,w_200,g_face/v1632318796/1_r6odw9.jpg',

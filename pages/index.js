@@ -4,11 +4,20 @@ import { useState } from 'react';
 import { GithubOutlined, DownloadOutlined, LinkedinOutlined, MailOutlined } from '@ant-design/icons'
 
 import Cover from '../components/Cover';
-import PROJECTS_DATA from '../components/projects.data';
+import PROJECTS_DATA from '../public/assets/projects';
 import GreenButton from '../components/button/GreenButton';
 
-export default function Home() {
-  const [data, setData] = useState(PROJECTS_DATA)
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+      projects: PROJECTS_DATA
+    }
+  }
+}
+
+export default function Home({ projects }) {
+  const [data, setData] = useState(projects)
 
   const handleClose = (id) => {
     const newData = data.filter((e) => e.id !== id)
@@ -65,7 +74,7 @@ export default function Home() {
             <Link href="/about">
               <GreenButton text="Know More" />
             </Link>
-            <a href="/">
+            <a href="/assets/resume.pdf" target="_blank">
               <button data-aos="fade-in" className="rounded-lg border-2 px-8 py-4 mx-4 flex items-center justify-between font-semibold hover:bg-info hover:text-white border-info text-info">
                 <DownloadOutlined /> &nbsp;
                 Download Resume</button>

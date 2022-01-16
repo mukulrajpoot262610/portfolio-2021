@@ -1,20 +1,32 @@
 import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
-import PROJECTS_DATA from '../../components/projects.data'
+import PROJECTS_DATA from '../../public/assets/projects'
 import { Spin } from 'antd';
 import Circle from '../../components/Circle';
 
-const ProjectDetail = () => {
+export const getStaticProps = async ({ params }) => {
+  const project = PROJECTS_DATA.find(p => p.id.toString() === params.id)
 
-  const router = useRouter()
-  const { id } = router.query
+  return {
+    props: {
+      project: project
+    }
+  }
+}
 
-  const [data, setData] = useState()
+export const getStaticPaths = async () => {
+  const paths = PROJECTS_DATA.map(project => ({
+    params: { id: project.id.toString() }
+  }))
 
-  useEffect(() => {
-    setData(PROJECTS_DATA.find((e) => e.id == id))
-  }, [id])
+  return {
+    paths,
+    fallback: true,
+  }
+}
+
+const ProjectDetail = ({ project }) => {
+  const [data] = useState(project)
 
   return (
     <div className="min-h-screen px-3 overflow-hidden">
