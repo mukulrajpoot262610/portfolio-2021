@@ -36,7 +36,10 @@ const PROJECTS_DATA = [
         link: 'https://app.subirapro.com/',
         github: 'NA',
         type: 'WebApp',
-        category: 'Intership'
+        category: 'Internship',
+        review: '5',
+        file: '/assets/feedback.js',
+        client: 'Subira CEO'
     },
     {
         id: 4,
@@ -65,7 +68,7 @@ const PROJECTS_DATA = [
     {
         id: 6,
         name: 'GitHub Profiler',
-        desc: 'DEV is a community of software developers getting together to help one another out. The software industry relies on collaboration and networked learning. We provide a place for that to happen.DEV is built on Forem: open source software designed to empower communities.Because our application is open source, you can inspect every little detail of the code, or chip in yourself! Forem is available for anyone interested in creating similar communities in any niche or passion.Visit our meta Forem, forem.dev for more information.We believe in transparency and adding value to the ecosystem.We hope you enjoy poking around and participating!',
+        desc: 'GitHub Profiler is a simple application made using GitHub REST APIs and next.js, this application can find your github profile and show your stats in different way. You have to put your GitHub username and see your stats.',
         image: 'https://res.cloudinary.com/mukulrajpoot/image/upload/v1637670521/portfolio/Untitled_design_1_xox2jt.png',
         tech: [{ image: '/icons/nextjs.svg', name: 'Next.js' }, { image: '/icons/tailwind.svg', name: 'tailwind' }, { image: '/icons/github.svg', name: 'Github' }, { image: '/icons/vercel.svg', name: 'vercel' },],
         date: '2021',
@@ -77,7 +80,7 @@ const PROJECTS_DATA = [
     {
         id: 7,
         name: 'Firebase Authentication',
-        desc: 'DEV is a community of software developers getting together to help one another out. The software industry relies on collaboration and networked learning. We provide a place for that to happen.DEV is built on Forem: open source software designed to empower communities.Because our application is open source, you can inspect every little detail of the code, or chip in yourself! Forem is available for anyone interested in creating similar communities in any niche or passion.Visit our meta Forem, forem.dev for more information.We believe in transparency and adding value to the ecosystem.We hope you enjoy poking around and participating!',
+        desc: 'Complete Firebase Authentication has features like email verification, password reset, social login etc.',
         image: 'https://res.cloudinary.com/mukulrajpoot/image/upload/v1642320058/portfolio/Untitled_design_2_bp4lqq.png',
         tech: [{ image: '/icons/nextjs.svg', name: 'Next.js' }, { image: '/icons/tailwind.svg', name: 'tailwind' }, { image: '/icons/firebase.svg', name: 'Firebase' }, { image: '/icons/vercel.svg', name: 'vercel' }, { image: '/icons/mongodb.svg', name: 'MongoDB' },],
         date: '2021',

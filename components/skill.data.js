@@ -1,15 +1,5 @@
 const SKILL_DATA = [
     {
-        id: 1,
-        name: 'HTML',
-        image: '/icons/html5.svg'
-    },
-    {
-        id: 2,
-        name: 'CSS',
-        image: '/icons/css.svg'
-    },
-    {
         id: 13,
         name: 'JS',
         image: '/icons/javascript.svg'
