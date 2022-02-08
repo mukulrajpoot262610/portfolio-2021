@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { GithubOutlined, TwitterOutlined, LinkedinOutlined, MailOutlined } from '@ant-design/icons'
+import { GithubOutlined, LinkedinOutlined, MailOutlined } from '@ant-design/icons'
 
 const Contact = () => {
     return (
