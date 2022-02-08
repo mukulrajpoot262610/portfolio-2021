@@ -16,16 +16,23 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Mukul Rajpoot</title>
         <meta charSet="utf-8" />
+        <title>Mukul Rajpoot - Front-End Developer</title>
         <meta name="description" content="I am a front-end creative developer based in Barielly, India. I am a Computer Science undergraduate from Chandigarh University and also did some coursework in Designing and Visual Arts." />
-        <meta name="keywords" content="Developer, Next Developer, Mukul Rajpoot, Full-stack Developer, Front-End Developer" />
-        <meta name="author" content="Mukul Rajpoot" />
-        <link rel="icon" href="/favicon.ico" />
 
-        <meta property="og:url" content="https://mukulrajpoot.com/" key="ogurl" />
-        <meta property="og:image" content="https://res.cloudinary.com/mukulrajpoot/image/upload/v1632318807/portfolio/4_m6or3t.png" key="ogimage" />
-        <meta property="og:site_name" content="Mukul Rajpoot Portfolio" key="ogsitename" />
-        <meta property="og:title" content="Mukul Rajpoot - Front-End Developer" key="title" />
-        <meta property="og:description" content="I am a front-end creative developer based in Barielly, India. I am a Computer Science undergraduate from Chandigarh University and also did some coursework in Designing and Visual Arts." key="description" />
+        <meta itemprop="name" content="Mukul Rajpoot - Front-End Developer" />
+        <meta itemprop="description" content="I am a front-end creative developer based in Barielly, India. I am a Computer Science undergraduate from Chandigarh University and also did some coursework in Designing and Visual Arts." />
+        <meta itemprop="image" content="http://res.cloudinary.com/mukulrajpoot/image/upload/v1632318807/portfolio/4_m6or3t.png" />
+
+        <meta property="og:url" content="https://mukulrajpoot.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Mukul Rajpoot - Front-End Developer" />
+        <meta property="og:description" content="I am a front-end creative developer based in Barielly, India. I am a Computer Science undergraduate from Chandigarh University and also did some coursework in Designing and Visual Arts." />
+        <meta property="og:image" content="http://res.cloudinary.com/mukulrajpoot/image/upload/v1632318807/portfolio/4_m6or3t.png" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Mukul Rajpoot - Front-End Developer" />
+        <meta name="twitter:description" content="I am a front-end creative developer based in Barielly, India. I am a Computer Science undergraduate from Chandigarh University and also did some coursework in Designing and Visual Arts." />
+        <meta name="twitter:image" content="http://res.cloudinary.com/mukulrajpoot/image/upload/v1632318807/portfolio/4_m6or3t.png" />
       </Head>
 
       <Navbar />
