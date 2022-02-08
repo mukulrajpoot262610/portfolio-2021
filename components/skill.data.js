@@ -64,6 +64,11 @@ const SKILL_DATA = [
         name: 'Vercel',
         image: '/icons/vercel.svg'
     },
+    {
+        id: 15,
+        name: 'Prisma',
+        image: '/icons/prisma.svg'
+    },
 ]
 
 export default SKILL_DATA

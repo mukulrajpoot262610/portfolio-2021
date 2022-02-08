@@ -1,5 +1,12 @@
 const LIST_DATA = [
     {
+        id: 10,
+        name: 'Shopping Cart',
+        link: 'https://vegshop-mr.netlify.app',
+        github: 'https://github.com/mukulrajpoot262610/veg-shop',
+        tech: ['reactjs', 'styled-comp', 'redux', 'api'],
+    },
+    {
         id: 2,
         name: 'Dev.to Community Clone',
         link: 'http://blog-website-mr.herokuapp.com/',
@@ -55,13 +62,7 @@ const LIST_DATA = [
         github: '',
         tech: ['reactjs', 'materialui', 'redux', 'api'],
     },
-    {
-        id: 10,
-        name: 'Shopping Cart',
-        link: 'https://vegshop-mr.netlify.app',
-        github: 'https://github.com/mukulrajpoot262610/veg-shop',
-        tech: ['reactjs', 'styled-comp', 'redux', 'api'],
-    },
+
 ]
 
 export default LIST_DATA

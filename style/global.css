@@ -48,3 +48,28 @@ body {
 li {
   list-style: none;
 }
+
+.css-gnissy {
+  background: -webkit-linear-gradient(
+    right,
+    red 20%,
+    green 40%,
+    blue 60%,
+    cyan 80%
+  );
+
+  -webkit-background-clip: text;
+  /*
+    `color` seems to work too
+    -webkit-text-fill-color: transparent;
+  */
+  color: transparent;
+  background-size: 200% auto;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
