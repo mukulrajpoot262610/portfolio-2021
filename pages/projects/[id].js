@@ -29,10 +29,8 @@ export const getStaticPaths = async () => {
   }
 }
 
-const ProjectDetail = ({ project, projects }) => {
+const ProjectDetail = ({ project }) => {
   const [data] = useState(project)
-
-  console.log(data)
 
   return (
     <div className="min-h-screen px-3 overflow-hidden">
@@ -67,25 +65,14 @@ const ProjectDetail = ({ project, projects }) => {
                 <Circle image={'/icons/chrome.svg'} text="Live" link={data.link} />
               </div>
 
-              {
+              {/* {
                 data.category === 'Freelance' ? (
                   <div className=''>
                     <h1 className='uppercase text-3xl text-success font-bold mt-28 mb-10'>Testimonial</h1>
                     <Feedback text={data.feedback} user={data.client} />
                   </div>
                 ) : ""
-              }
-
-              {
-                data.category === 'Internship' ? (
-                  <div className=''>
-                    <h1 className='uppercase text-3xl text-success font-bold mt-28 mb-10'>Testimonial</h1>
-                    <a href='/assets/feedback.pdf' target="_blank">
-                      <Image src="https://res.cloudinary.com/mukulrajpoot/image/upload/v1642389988/feedback_dgqqiu.png" width={160} height={200} objectFit='contain' alt="" />
-                    </a>
-                  </div>
-                ) : ""
-              }
+              } */}
             </div>
 
           </div>

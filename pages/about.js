@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Circle from '../components/Circle'
 import SKILL_DATA from '../components/skill.data'
+import Image from 'next/image'
 
 const About = () => {
     return (
@@ -18,11 +19,18 @@ const About = () => {
                     <h1 data-aos="fade-right" className="absolute bottom-0 text-transparent" style={{ WebkitTextStrokeWidth: '.5px', WebkitTextStrokeColor: 'var(--main-yellow)', fontSize: '15rem', zIndex: '-1' }}>&lt;About /&gt; </h1>
                     <h1 data-aos="fade-left" className="text-secondary-100 font-extrabold" style={{ fontSize: '10rem' }} >Mukul Rajpoot</h1>
                 </div>
-                <main className="container px-20 lg:px-56">
-                    <h3 className="text-success md:text-4xl" data-aos="fade-in">About Me</h3>
-                    <h3 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8">I am a front-end creative developer based in Barielly, India. I am a <span>Computer Science</span> undergraduate from Chandigarh University and also did some coursework in Designing and Visual Arts.</h3>
-                    <h4 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8"> I enjoy using my skill-set to empower people to accomplish their goals. My development stack is focused on performance & accessibility with delightful interactions. I create lighting fast WebApps and Websites using <span className="font-bold text-success">MERN</span> Stack with the help of NextJS.
-                    </h4>
+                <main className="container pt-20 px-20 lg:px-56 flex items-center flex-col">
+                    <div className='w-full lg:w-2/3'>
+                        <h3 className="text-success md:text-4xl" data-aos="fade-in">About Me</h3>
+                        <h3 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8">I am a front-end creative developer based in Barielly, India. I am a <span>Computer Science</span> undergraduate from Chandigarh University and also did some coursework in Designing and Visual Arts.</h3>
+                        <h4 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8"> I enjoy using my skill-set to empower people to accomplish their goals. My development stack is focused on performance & accessibility with delightful interactions. I create lighting fast WebApps and Websites using <span className="font-bold text-success">MERN</span> Stack with the help of NextJS.
+                        </h4>
+                    </div>
+                    <div className='w-full p-10 lg:p-0 lg:w-1/3 flex justify-center items-center'>
+                        <div className='border-4 border-info p-4 rounded-full flex justify-center items-center'>
+                            <Image src="/image.png" height={250} width={250} alt="" className='rounded-full' />
+                        </div>
+                    </div>
                 </main>
             </div>
 
