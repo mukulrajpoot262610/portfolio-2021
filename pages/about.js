@@ -19,7 +19,7 @@ const About = () => {
                     <h1 data-aos="fade-right" className="absolute bottom-0 text-transparent" style={{ WebkitTextStrokeWidth: '.5px', WebkitTextStrokeColor: 'var(--main-yellow)', fontSize: '15rem', zIndex: '-1' }}>&lt;About /&gt; </h1>
                     <h1 data-aos="fade-left" className="text-secondary-100 font-extrabold" style={{ fontSize: '10rem' }} >Mukul Rajpoot</h1>
                 </div>
-                <main className="container pt-20 px-20 lg:px-56 flex items-center flex-col">
+                <main className="container pt-20 px-20 lg:px-56 flex items-center flex-col lg:flex-row">
                     <div className='w-full lg:w-2/3'>
                         <h3 className="text-success md:text-4xl" data-aos="fade-in">About Me</h3>
                         <h3 className="text-secondary-900 text-3xl md:text-4xl max-w-6xl my-8">I am a front-end creative developer based in Barielly, India. I am a <span>Computer Science</span> undergraduate from Chandigarh University and also did some coursework in Designing and Visual Arts.</h3>
