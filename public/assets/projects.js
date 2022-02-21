@@ -9,7 +9,8 @@ const PROJECTS_DATA = [
         link: 'https://eth-transfer-dapp.vercel.app/',
         github: 'https://github.com/mukulrajpoot262610/eth-transfer-dapp',
         type: 'WebApp',
-        category: 'Personal'
+        category: 'Personal',
+        completed: true,
     },
     {
         id: 2,
@@ -24,7 +25,8 @@ const PROJECTS_DATA = [
         category: 'Freelance',
         review: '5',
         feedback: 'Mukul has done excellent work. Client was extremely happy with quality of deliverables. Looking to buy his services for more projects.',
-        client: 'fiverr buyer'
+        client: 'fiverr buyer',
+        completed: true,
     },
     {
         id: 3,
@@ -36,22 +38,23 @@ const PROJECTS_DATA = [
         link: 'https://app.subirapro.com/',
         github: 'NA',
         type: 'WebApp',
-        category: 'Internship',
+        category: 'Freelance',
         review: '5',
         file: '/assets/feedback.js',
-        client: 'Subira CEO'
+        client: 'Subira CEO',
+        completed: true,
     },
     {
         id: 4,
-        name: 'Adidas Online Store',
-        desc: 'adidas designs for and with athletes of all kinds. Creators, who love to change the game. Challenge conventions. Break the rules and define new ones. Then break them again. We supply teams and individuals with athletic clothing pre-match. To stay focussed. We design sports apparel that get you to the finish line. To win the match. We support women, with bras and tights made for purpose. From low to high support. Maximum comfort. We design, innovate and itterate. Testing new technologies in action. On the pitch, the tracks, the court, the pool. Retro workout clothes inspire new streetwear essentials. Like NMD, Ozweego and our Firebird tracksuits. Classic sports models are brought back to life. Like Stan Smith. And Superstar. Now seen on the streets and the stages.',
-        image: 'https://res.cloudinary.com/mukulrajpoot/image/upload/v1640495655/portfolio/Untitled_design_2_malm4g.png',
-        tech: [{ image: '/icons/nextjs.svg', name: 'Next.js' }, { image: '/icons/tailwind.svg', name: 'Tailwind' }, { image: '/icons/redux.svg', name: 'Redux' }, { image: '/icons/nodejs.svg', name: 'Node' }, { image: '/icons/expressjs.svg', name: 'Express' }, { image: '/icons/mongodb.svg', name: 'MongoDB' },],
+        name: 'MentorMap',
+        desc: 'MentorMap is on a mission to simplify and streamline the e-learning domain, by creating minimal & straight forward roadmaps with the best educational content available across the web, so our learners can focus on preparation and crack their dream jobs!',
+        image: 'https://res.cloudinary.com/mukulrajpoot/image/upload/v1645421208/portfolio/2_vlxy6n.png',
+        tech: [{ image: '/icons/nextjs.svg', name: 'Next.js' }, { image: '/icons/tailwind.svg', name: 'Tailwind' }, { image: '/icons/redux.svg', name: 'Redux' }, { image: '/icons/nodejs.svg', name: 'Node' }, { image: '/icons/expressjs.svg', name: 'Express' }, { image: '/icons/mongodb.svg', name: 'MongoDB' }, { image: '/icons/aws.svg', name: 'AWS' },],
         date: '2022',
-        link: 'https://adidas-clone.vercel.app/',
-        github: 'https://github.com/mukulrajpoot262610/adidas-clone',
+        link: 'https://www.mentormap.io/',
+        github: 'NA',
         type: 'WebApp',
-        category: 'Personal'
+        category: 'Freelance'
     },
     {
         id: 5,
@@ -63,19 +66,20 @@ const PROJECTS_DATA = [
         link: 'http://blog-website-mr.herokuapp.com/',
         github: 'https://github.com/mukulrajpoot262610/Blog-website',
         type: 'WebApp',
-        category: 'Personal'
+        category: 'Personal',
+        completed: true,
     },
     {
         id: 6,
-        name: 'GitHub Profiler',
-        desc: 'GitHub Profiler is a simple application made using GitHub REST APIs and next.js, this application can find your github profile and show your stats in different way. You have to put your GitHub username and see your stats.',
-        image: 'https://res.cloudinary.com/mukulrajpoot/image/upload/v1637670521/portfolio/Untitled_design_1_xox2jt.png',
-        tech: [{ image: '/icons/nextjs.svg', name: 'Next.js' }, { image: '/icons/tailwind.svg', name: 'tailwind' }, { image: '/icons/github.svg', name: 'Github' }, { image: '/icons/vercel.svg', name: 'vercel' },],
+        name: 'Mynerva',
+        desc: 'Mynerva Coming Soon',
+        image: 'https://res.cloudinary.com/mukulrajpoot/image/upload/v1645421208/portfolio/3_mccbsf.png',
+        tech: [{ image: '/icons/nextjs.svg', name: 'Next.js' }, { image: '/icons/tailwind.svg', name: 'tailwind' }, { image: '/icons/github.svg', name: 'Github' }, { image: '/icons/vercel.svg', name: 'vercel' }, { image: '/icons/aws.svg', name: 'AWS' },],
         date: '2021',
-        link: 'https://dev-profiler.vercel.app/',
-        github: 'https://github.com/mukulrajpoot262610/github_profiler',
+        link: 'https://www.mynerva.in/',
+        github: 'NA',
         type: 'WebApp',
-        category: 'Personal'
+        category: 'Freelance'
     },
     {
         id: 7,
@@ -87,7 +91,8 @@ const PROJECTS_DATA = [
         link: 'https://fireabse-auth.vercel.app/',
         github: 'https://github.com/mukulrajpoot262610/dev-case-app',
         type: 'WebApp',
-        category: 'Personal'
+        category: 'Personal',
+        completed: true,
     },
 ]
 

@@ -69,6 +69,11 @@ const SKILL_DATA = [
         name: 'Prisma',
         image: '/icons/prisma.svg'
     },
+    {
+        id: 16,
+        name: 'AWS',
+        image: '/icons/aws.svg'
+    },
 ]
 
 export default SKILL_DATA
